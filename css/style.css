@@ -1,0 +1,121 @@
+/*Defaults styles*/
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/BgMain.jpeg);   
+    background-size: cover;
+}
+h1{
+    margin-top: 15px;
+    text-align: center;
+    color: #0047ab;
+    font-size: 75px;
+    font-weight: 200px;
+    text-shadow: 10px 10px 5px rgba(29, 136, 174, 0.511);
+    
+}
+/* this is the style of the box where the weather information will be display*/
+.box{
+    width: 90%;
+    max-width: 470px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    background:  linear-gradient(120deg, #fedcd8, #fdf5e6 ,#faf0e6 );
+    box-shadow: 10px 10px 10px rgba(29, 136, 174, 0.511);
+    color: #0047ab;
+}
+/*search box*/
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: none;
+    outline: 0.5px solid rgb(173, 199, 235);
+    background-color: #f0f8ffa3;
+    color: #555555;
+    padding: 5px 25px;
+    height: 40px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;    
+}
+
+.search input:focus{
+    outline:1px solid rgb(65, 141, 246);
+}
+/*search button style*/
+.search button{
+    border: none;
+    outline: none;
+    background-color: #f0f8ffa3;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color:  rgb(173, 199, 235);
+}
+/*this is the style of the pictures that will be displayed depending on the weather*/
+.icon{
+    margin-top: 30px;
+    width: 170px;
+}
+/*h style */
+.weather h2{
+    font-size: 40px;    
+}
+
+.weather h3{
+    font-size: 60px;    
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+/* This is the humidy and wind details*/
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.flex img{
+    margin: 10px;
+}
+
+.humidity, .wind{
+    font-size: 18px;
+    margin-top: -20;
+}
+/*This is the weather information  that will be hidden until the user writes a city name*/
+.weather{
+    display: none;
+}
+/*This is the style of the error message for when the people write the wrong city name*/
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
