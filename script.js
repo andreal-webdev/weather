@@ -4,6 +4,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 //the followings are variables for the input and button for the search box, and the icons that will appear according to the weather conditions
 const searchBox = document.querySelector(".search input"); 
 const searchBtn = document.querySelector(".search button");
+
 const icon = document.querySelector(".icon")
 
 async function weatherResults(city){ //this function is saying to will display the weather information that is in the API according to the city 
@@ -26,7 +27,7 @@ async function weatherResults(city){ //this function is saying to will display t
 
         //the following is a consition to change the image being displayed in the box depending on the weather contidions (rain, drizzle, clear, snow, thunderstorm or clouds)
         if(data.weather[0].main == "Clouds"){
-            icon.src = "img/cloudy.png";
+            icon.src = "img/cloudy-day.png";
         }
         else if(data.weather[0].main == "Clear"){
             icon.src = "img/sunny.png";
@@ -38,7 +39,7 @@ async function weatherResults(city){ //this function is saying to will display t
             icon.src = "img/drizzle.png";
         }
         else if(data.weather[0].main == "Snow"){
-            icon.src = "img/snowy.png";
+            icon.src = "img/snow.png";
         }
         else if(data.weather[0].main == "Thunderstorm"){
             icon.src = "img/stormy.png";
@@ -54,3 +55,10 @@ searchBtn.addEventListener("click", ()=>{
     weatherResults(searchBox.value);
 })
 
+searchBox.addEventListener("keydown", (event) => {
+   
+    if (event.key === "Enter") {
+        
+        weatherResults(searchBox.value);
+    }
+});

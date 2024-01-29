@@ -7,13 +7,19 @@ html{
 }
 
 body{
-    background-image: url(../img/BgMain.jpeg);   
+    background-image: url(../img/bg.jpeg);   
     background-size: cover;
 }
+
+.nav-link{
+    color: #fdfdfd;
+    position: relative;
+}
+
 h1{
     margin-top: 15px;
     text-align: center;
-    color: #0047ab;
+    color: #2e37ee;
     font-size: 75px;
     font-weight: 200px;
     text-shadow: 10px 10px 5px rgba(29, 136, 174, 0.511);
@@ -27,7 +33,7 @@ h1{
     border-radius: 10px;
     padding: 30px 20px;
     text-align: center;
-    background:  linear-gradient(120deg, #fedcd8, #fdf5e6 ,#faf0e6 );
+    background:  linear-gradient(#eceefc, #8baaed);
     box-shadow: 10px 10px 10px rgba(29, 136, 174, 0.511);
     color: #0047ab;
 }
@@ -42,7 +48,7 @@ h1{
 .search input{
     border: none;
     outline: 0.5px solid rgb(173, 199, 235);
-    background-color: #f0f8ffa3;
+    background-color: #fff;
     color: #555555;
     padding: 5px 25px;
     height: 40px;
