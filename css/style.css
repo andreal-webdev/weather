@@ -2,13 +2,13 @@
 html{
     margin: 0;
     padding: 0;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins';
     box-sizing: border-box;
+    
 }
 
 body{
-    background-image: url(../img/bg.jpeg);   
-    background-size: cover;
+    background-color: #093358;
 }
 
 .nav-link{
@@ -16,14 +16,23 @@ body{
     position: relative;
 }
 
-h1{
-    margin-top: 15px;
-    text-align: center;
-    color: #2e37ee;
-    font-size: 75px;
-    font-weight: 200px;
-    text-shadow: 10px 10px 5px rgba(29, 136, 174, 0.511);
-    
+
+.hero-text{
+    margin-left: 150px;
+    color: #ffffff;
+  
+}
+
+#hero{
+    height: 100vh;
+}
+
+#hero img{
+   margin: auto;
+   margin-top: 200px;
+}
+.hero-title{
+    font-weight: bolder;
 }
 /* this is the style of the box where the weather information will be display*/
 .box{
@@ -65,9 +74,9 @@ h1{
     border: none;
     outline: none;
     background-color: #f0f8ffa3;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    /* border-radius: 50%; */
+    /* width: 60px;
+    height: 60px; */
     cursor: pointer;
 }
 
